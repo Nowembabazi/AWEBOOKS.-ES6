@@ -28,5 +28,9 @@ if (localStorage.getItem('storedBooks') == null) {
   getFromLocalStorage();
 }
 
+const localDatetime = DateTime.local().toLocaleString(
+  DateTime.DATETIME_FULL_WITH_SECONDS,
+);
+
 const currentDate = document.querySelector('.date');
 currentDate.textContent = localDatetime;
