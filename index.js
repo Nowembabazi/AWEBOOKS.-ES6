@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // add-book
-const addBtn = document.getElementById('\addButton');
+const addBtn = document.getElementById('addButton');
 addBtn.addEventListener('click', () => {
   const title = document.getElementById('title');
   const author = document.getElementById('author');
@@ -27,10 +27,6 @@ if (localStorage.getItem('storedBooks') == null) {
 } else {
   getFromLocalStorage();
 }
-
-let localDatetime = DateTime.local().toLocaleString(
-  DateTime.DATETIME_FULL_WITH_SECONDS,
-);
 
 const currentDate = document.querySelector('.date');
 currentDate.textContent = localDatetime;

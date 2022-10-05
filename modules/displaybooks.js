@@ -19,7 +19,7 @@ const displayBook = () => {
       bookDetails.textContent = `"${allBooks.bookArray[i].title}" by ${allBooks.bookArray[i].author}`;
       container2.appendChild(bookDetails);
 
-      const removeButton = document.createElement("button");
+      const removeButton = document.createElement('button');
       removeButton.classList.add('remove');
       removeButton.textContent = 'Remove';
 
@@ -33,7 +33,7 @@ const displayBook = () => {
   } else {
     const bookDetails = document.createElement('p');
     bookDetails.classList.add('no_book');
-    bookDetails.textContent = `No books added yet`;
+    bookDetails.textContent = 'No books added yet';
     addedBooks.appendChild(bookDetails);
   }
 };
