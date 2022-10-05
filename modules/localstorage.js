@@ -1,12 +1,12 @@
-import allBooks from "./awesomebooks.js";
+import allBooks from './awesomebooks.js';
 
 const addToLocalStorage = () => {
   const stringifyArray = JSON.stringify(allBooks.bookArray);
-  localStorage.setItem("storedBooks", stringifyArray);
+  localStorage.setItem('storedBooks', stringifyArray);
 };
 
 const getFromLocalStorage = () => {
-  const stringifyArray = localStorage.getItem("storedBooks");
+  const stringifyArray = localStorage.getItem('storedBooks');
   allBooks.bookArray = JSON.parse(stringifyArray);
 };
 
