@@ -1,4 +1,4 @@
-import navSection from './modules/navSection.js/index.js';
+import navSection from './modules/navSection.js';
 import displayBook from './modules/displaybooks.js';
 import allBooks from './modules/awesomebooks.js';
 import { DateTime } from './modules/luxon.js';
